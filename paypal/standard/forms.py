@@ -220,3 +220,7 @@ class PayPalStandardBaseForm(forms.ModelForm):
     next_payment_date = forms.DateTimeField(required=False, input_formats=PAYPAL_DATE_FORMAT)
     subscr_date = forms.DateTimeField(required=False, input_formats=PAYPAL_DATE_FORMAT)
     subscr_effective = forms.DateTimeField(required=False, input_formats=PAYPAL_DATE_FORMAT)
+
+    class Meta:
+        fields = '__all__'
+
